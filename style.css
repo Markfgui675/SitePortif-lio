@@ -5,16 +5,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    min-height: 2000px;
+}
 
-
+.menuToggle{
+    display: none;
+}
 header{
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 10vh;
     padding: 3%;
-    background: #801313;
+    background: transparent;
+    z-index: 1000;
+    transition: all .5s;
+}
+header.sticky{
+    justify-content: space-between;
+    background: blue;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 header .links{
     display: flex;
@@ -27,6 +41,43 @@ header .links a{
     color: #ffffff;
     margin: 7px;
 }
+header .links a:hover{
+    transition: all 0.3s;
+    color: blue;
+}
+header.sticky .links a:hover{
+    transition: all .3s;
+    color: black;
+}
+header .logo{
+    display: none;
+}
+header.sticky .logo{
+    display: block;
+}
+header .social{
+    display: none;
+}
+header.sticky .social{
+    display: block;
+}
+header .social a img{
+    margin: 5px;
+    width: 25px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background:#616161 url(imagens/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
 
 
 
@@ -35,4 +86,79 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+/*main ------ conteúdo principal*/
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.content{
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.content h1{
+    color:#ffffff;
+    font-size: 64px;
+}
+.content h2{
+    color: #ffffff;
+    font-size: 44px;
+}
+.social-banner{
+    width: 50%;
+    height: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 8%;
+    margin-bottom: 5%;
+}
+.social-banner a img{
+    width: 25px;
+    filter: invert(100%);
+    margin: 20%;
+}
+
+.arrow{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+.arrow p{
+    color: #ffffff;
+    transform: rotateZ(-90deg);
+}
+.arrow img{
+    width: 45px;
+    filter: invert(100%);
+    transform: rotateZ(90deg);
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+@keyframes move {
+    from{
+        top: 0px;
+    }
+    to{
+        top: 100px;
+    }
 }
