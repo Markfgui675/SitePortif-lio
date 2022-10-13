@@ -5,6 +5,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+/*---------------------------------------Fontes---------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap'); /*Fonte Questrial - Para Textos ou Títulos*/
+/*font-family: 'Questrial', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap'); /* Fonte Courier Prime - Secundária */
+/*font-family: 'Courier Prime', monospace;*/
+
+
+
+
+/*-------------------------------------Paleta de cores---------------------------------------------*/
+
+
+:root{
+   --branco: #ffffff;
+   --preto: #020202;
+   --persianblue: #192bc2;
+   --capri: #0abaff;
+}
+
+
+/*-----------------------------------------Scrollbar--------------------------------------*/
 body::-webkit-scrollbar{
     width: 10px;
 }
@@ -21,6 +47,7 @@ body::-webkit-scrollbar-thumb{
 body{
     min-height: 2000px;
 }
+
 
 .menuToggle{
     display: none;
@@ -39,7 +66,7 @@ header{
 }
 header.sticky{
     justify-content: space-between;
-    background: blue;
+    background: var(--capri);
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
@@ -50,13 +77,14 @@ header .links{
     flex-direction: row;
 }
 header .links a{
+    font-family: 'Courier Prime', monospace;
     text-decoration: none;
     color: #ffffff;
-    margin: 7px;
+    margin: 10px;
 }
 header .links a:hover{
     transition: all 0.3s;
-    color: blue;
+    color: var(--capri);
 }
 header.sticky .links a:hover{
     transition: all .3s;
@@ -77,6 +105,20 @@ header.sticky .social{
 header .social a img{
     margin: 5px;
     width: 25px;
+    filter: invert(100%);
+}
+header .social a img:hover{
+    position: relative;
+    animation:social .1s forwards;
+    transition: all;
+}
+@keyframes social {
+    from{
+        top: 0px;
+    }
+    to{
+        top: -5px;
+    }
 }
 
 .banner{
@@ -122,10 +164,12 @@ main{
     flex-direction: column;
 }
 .content h1{
+    font-family: 'Questrial', sans-serif;
     color:#ffffff;
     font-size: 64px;
 }
 .content h2{
+    font-family: 'Courier Prime', monospace;
     color: #ffffff;
     font-size: 44px;
 }
