@@ -170,7 +170,7 @@ main{
 }
 .content h2{
     font-family: 'Courier Prime', monospace;
-    color: #ffffff;
+    color: var(--capri);
     font-size: 44px;
 }
 .social-banner{
@@ -188,6 +188,9 @@ main{
     width: 25px;
     filter: invert(100%);
     margin: 20%;
+}
+.social-banner a img:hover{
+    
 }
 
 .arrow{
@@ -209,13 +212,13 @@ main{
     filter: invert(100%);
     transform: rotateZ(90deg);
     position: relative;
-    animation: move 2s infinite alternate;
+    animation: move 1.5s infinite alternate;
 }
 @keyframes move {
     from{
         top: 0px;
     }
     to{
-        top: 100px;
+        top: 75px;
     }
 }
