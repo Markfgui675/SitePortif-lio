@@ -75,6 +75,7 @@ header .links{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    width: 80%;
 }
 header .links a{
     font-family: 'Courier Prime', monospace;
@@ -89,18 +90,29 @@ header .links a:hover{
 header.sticky .links a:hover{
     transition: all .3s;
     color: black;
+    width: 80%;
 }
 header .logo{
     display: none;
+    width: 10%;
+}
+header .logo img{
+    width: 80px;
 }
 header.sticky .logo{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 header .social{
     display: none;
 }
 header.sticky .social{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 header .social a img{
     margin: 5px;
@@ -108,31 +120,6 @@ header .social a img{
     filter: invert(100%);
 }
 header .social a img:hover{
-    position: relative;
-    animation:social .1s forwards;
-    transition: all;
-}
-@keyframes social {
-    from{
-        top: 0px;
-    }
-    to{
-        top: -5px;
-    }
-}
-
-header .social-nav-list{
-    display: none;
-}
-header.sticky .social-nav-list{
-    display: none;
-}
-header .social-nav-list a img{
-    margin: 5px;
-    width: 25px;
-    filter: invert(100%);
-}
-header .social-nav-list a img:hover{
     position: relative;
     animation:social .1s forwards;
     transition: all;
@@ -314,4 +301,34 @@ main{
     to{
         top: 75px;
     }
+}
+
+
+
+
+@media (max-width: 950px) {
+    
+    .box{
+        margin-bottom: 2%;
+    }
+    .content{
+        margin-top: 30%;
+    }
+
+}
+@media (max-width: 580px) {
+    
+    .box{
+        margin-bottom: 5%;
+    }
+    .content{
+        margin-top: 35%;
+    }
+    .content h1{
+        font-size: 54px;
+    }
+    .content h2{
+        font-size: 34px;
+    }
+
 }
