@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Fellipe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
     <!--menu-->
     <header>
 
-        <div class="logo"><img src="imagens/GfM-removebg-preview.png" alt="mfg-logo"></div>
+        <div class="logo">
+            <img src="imagens/GfM-removebg-preview.png" alt="mfg-logo">
+        </div>
         <button class="mobile-menu-button">
             <img src="imagens/cardapio (1).png" alt="">
         </button>
         <nav class="links">
             <div class="nav-list">
-                <a href="#">Sobre mim</a>
+                <a href="#about">Sobre mim</a>
                 <a href="#">Habilidades</a>
                 <a href="#">Portifólio</a>
                 <a href="#">Certificações</a>
@@ -58,6 +61,10 @@
 
         </div>
 
+        <div class="about" id="about">
+            
+        </div>
+
     </main>
 
 
@@ -66,5 +73,9 @@
 
     <script src="effects.js"></script>
     <script src="mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
