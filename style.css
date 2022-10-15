@@ -171,6 +171,9 @@ header .social a img:hover{
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
+    .nav-list a:hover{
+        transform: translateX(42.79%);
+    }
     header.sticky{
         justify-content: space-between;
     }
@@ -186,11 +189,11 @@ header .social a img:hover{
 @keyframes navLinkfade {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(0px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 }
 
