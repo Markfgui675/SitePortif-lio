@@ -90,3 +90,53 @@
     align-items: center;
     padding-bottom: 2%;
 }
+.button-about a{
+    text-decoration: none;
+}
+.button-about div{
+    padding: 18px;
+    background: var(--capri);
+    border-radius: 50px;
+    transition: all .2s;
+}
+.button-about a:hover{
+    border-radius: 40px;
+}
+.button-about div{
+    text-decoration: none;
+    color: var(--branco);
+    font-family: 'Courier Prime', monospace;
+}
+
+
+
+
+/*-----------------------Responsividade geral-----------------------------*/
+@media (max-width: 950px) {
+    
+    .about{
+        padding-bottom: 6%;
+    }
+    .about-title{
+        align-items: baseline;
+    }
+    .about-content{
+        margin-top: 2%;
+        flex-direction: column;
+    }
+    .about-content .text{
+        width: 100%;
+    }
+    .about-content .text p{
+        font-size: 17px;
+    }
+    .about-content .content{
+        width: 60%;
+    }
+
+}
+@media (max-width: 580px) {
+    
+    
+
+}
