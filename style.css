@@ -247,9 +247,32 @@ main{
     font-size: 64px;
 }
 .content h2{
+    border-right: 2px solid var(--branco);
     font-family: 'Courier Prime', monospace;
     color: var(--capri);
     font-size: 44px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typing-animation{
+    animation: cursor .65s steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 10em;
+    }
+    
+}
+@keyframes cursor {
+    from{
+        border-right-color: var(--branco);
+    }
+    to{
+        border-right-color: transparent;
+    }
 }
 .social-banner{
     width: 50%;
