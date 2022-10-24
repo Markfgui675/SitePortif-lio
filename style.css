@@ -31,7 +31,9 @@
 
    scroll-behavior: smooth;
 }
-
+body{
+    background: var(--background-site-geral);
+}
 
 /*-----------------------------------------Scrollbar--------------------------------------*/
 body::-webkit-scrollbar{
