@@ -27,20 +27,96 @@
 
 .about{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding-top: 6%;
-    padding-bottom: 2%;
+}
+.about .container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.about .container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.about .container .box-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2%;
+}
+.about .container .box-img .bxImg{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    background: var(--capri);
+    margin: auto;
+    z-index: 1;
+}
+.about .container .box-img .bxImg .img{
+    width: 80%;
+    height: 90%;
+    background: url(imagens/tobias-rademacher-kUKF6fv0uss-unsplash.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 5%;
+    left: 16%;
+}
+
+.about .container .box-img .bxTitle{
+    position: absolute;
+    z-index: 2;
+    top: 46%;
+    left: 6%;
+    color: white;
+    transform: rotateZ(-90deg);
+}
+.about .container .box-img .bxTitle h2{
+    font-size: 24px;
+    font-family: 'Questrial', sans-serif;
 }
 
 
 
+.about .container .box-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+
+.about .button{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 
 
 /*-----------------------Responsividade geral-----------------------------*/
+@media (max-width: 1025px) {
+    .about .container .box-img .bxImg{
+        width: 90%;
+    }
+}
 @media (max-width: 950px) {
     
     .about{
@@ -63,6 +139,14 @@
         width: 60%;
     }
 
+}
+@media (max-width: 735px){
+    .about .container .box-img{
+        display: none;
+    }
+    .about .container .box-text{
+        width: 100%;
+    }
 }
 @media (max-width: 580px) {
     
