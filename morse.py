@@ -1,132 +1,132 @@
 palavra = str(input("Digite uma palavra: "));
 query = "";
 for c in range (0, len(palavra)):
-    if palavra[c] == 'A' or palavra[c] == 'a':
+    if palavra[c] in 'AaÁáÂâÀà':
         if c == 0:
             query = '.- '
         else:
             query += '.- '
-    if palavra[c] == 'B' or palavra[c] == 'b':
+    if palavra[c] in 'Bb':
         if c == 0:
             query = '-... '
         else:
             query += '-... '
-    if palavra[c] == 'C' or palavra[c] == 'c':
+    if palavra[c] in 'Cc':
         if c == 0:
             query = '-.-. '
         else:
             query += '-.-. '
-    if palavra[c] == 'D' or palavra[c] == 'd':
+    if palavra[c] in 'Dd':
         if c == 0:
             query = '-.. '
         else:
             query += '-.. '
-    if palavra[c] == 'E' or palavra[c] == 'e':
+    if palavra[c] in 'EéÊê':
         if c == 0:
             query = '. '
         else:
             query += '. '
-    if palavra[c] == 'F' or palavra[c] == 'f':
+    if palavra[c] in 'Ff':
         if c == 0:
             query = '..-. '
         else:
             query += '..-. '
-    if palavra[c] == 'G' or palavra[c] == 'g':
+    if palavra[c] in 'Gg':
         if c == 0:
             query = '--. '
         else:
             query += '--. '
-    if palavra[c] == 'H' or palavra[c] == 'h':
+    if palavra[c] in 'Hh':
         if c == 0:
             query = '.... '
         else:
             query += '.... '
-    if palavra[c] == 'I' or palavra[c] == 'i':
+    if palavra[c] in 'Ii':
         if c == 0:
             query = '.. '
         else:
             query += '.. '
-    if palavra[c] == 'J' or palavra[c] == 'j':
+    if palavra[c] in 'Jj':
         if c == 0:
             query = '.--- '
         else:
             query += '.--- '
-    if palavra[c] == 'K' or palavra[c] == 'k':
+    if palavra[c] in 'Kk':
         if c == 0:
             query = '-.- '
         else:
             query += '-.- '
-    if palavra[c] == 'L' or palavra[c] == 'l':
+    if palavra[c] in 'Ll':
         if c == 0:
             query = '.-.. '
         else:
             query += '.-.. '
-    if palavra[c] == 'M' or palavra[c] == 'm':
+    if palavra[c] in 'Mm':
         if c == 0:
             query = '-- '
         else:
             query += '-- '
-    if palavra[c] == 'N' or palavra[c] == 'n':
+    if palavra[c] in 'Nn':
         if c == 0:
             query = '-. '
         else:
             query += '-. '
-    if palavra[c] == 'O' or palavra[c] == 'o':
+    if palavra[c] in 'OoÓóÔô':
         if c == 0:
             query = '--- '
         else:
             query += '--- '
-    if palavra[c] == 'P' or palavra[c] == 'p':
+    if palavra[c] in 'Pp':
         if c == 0:
             query = '.--. '
         else:
             query += '.--. '
-    if palavra[c] == 'Q' or palavra[c] == 'q':
+    if palavra[c] in 'Qq':
         if c == 0:
             query = '--.- '
         else:
             query += '--.- '
-    if palavra[c] == 'R' or palavra[c] == 'r':
+    if palavra[c] in 'Rr':
         if c == 0:
             query = '.-.'
         else:
             query += '.-. '
-    if palavra[c] == 'S' or palavra[c] == 's':
+    if palavra[c] in 'Ss':
         if c == 0:
             query = '... '
         else:
             query += '... '
-    if palavra[c] == 'T' or palavra[c] == 't':
+    if palavra[c] in 'Tt':
         if c == 0:
             query = '- '
         else:
             query += '- '
-    if palavra[c] == 'U' or palavra[c] == 'u':
+    if palavra[c] in 'UuÚú':
         if c == 0:
             query = '..- '
         else:
             query += '..- '
-    if palavra[c] == 'V' or palavra[c] == 'v':
+    if palavra[c] in 'Vv':
         if c == 0:
             query = '...- '
         else:
             query += '...- '
-    if palavra[c] == 'W' or palavra[c] == 'w':
+    if palavra[c] in 'Ww':
         if c == 0:
             query = '.-- '
         else:
             query += '.-- '
-    if palavra[c] == 'X' or palavra[c] == 'x':
+    if palavra[c] in 'Xx':
         if c == 0:
             query = '-..- '
         else:
             query += '-..-'
-    if palavra[c] == 'Y' or palavra[c] == 'y':
+    if palavra[c] in 'Yy':
         if c == 0:
             query = '-.-- '
         else:
             query += '-.-- '
-    if palavra[c] == 'Z' or palavra[c] == 'z':
+    if palavra[c] in 'Zz':
         if c == 0:
             query = '--.. '
         else:
