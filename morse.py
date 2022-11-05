@@ -6,131 +6,133 @@ for c in range (0, len(palavra)):
             query = '.- '
         else:
             query += '.- '
-    if palavra[c] in 'Bb':
+    elif palavra[c] in 'Bb':
         if c == 0:
             query = '-... '
         else:
             query += '-... '
-    if palavra[c] in 'Cc':
+    elif palavra[c] in 'CcÇç':
         if c == 0:
             query = '-.-. '
         else:
             query += '-.-. '
-    if palavra[c] in 'Dd':
+    elif palavra[c] in 'Dd':
         if c == 0:
             query = '-.. '
         else:
             query += '-.. '
-    if palavra[c] in 'EéÊê':
+    elif palavra[c] in 'EeÉéÊê':
         if c == 0:
             query = '. '
         else:
             query += '. '
-    if palavra[c] in 'Ff':
+    elif palavra[c] in 'Ff':
         if c == 0:
             query = '..-. '
         else:
             query += '..-. '
-    if palavra[c] in 'Gg':
+    elif palavra[c] in 'Gg':
         if c == 0:
             query = '--. '
         else:
             query += '--. '
-    if palavra[c] in 'Hh':
+    elif palavra[c] in 'Hh':
         if c == 0:
             query = '.... '
         else:
             query += '.... '
-    if palavra[c] in 'Ii':
+    elif palavra[c] in 'Ii':
         if c == 0:
             query = '.. '
         else:
             query += '.. '
-    if palavra[c] in 'Jj':
+    elif palavra[c] in 'Jj':
         if c == 0:
             query = '.--- '
         else:
             query += '.--- '
-    if palavra[c] in 'Kk':
+    elif palavra[c] in 'Kk':
         if c == 0:
             query = '-.- '
         else:
             query += '-.- '
-    if palavra[c] in 'Ll':
+    elif palavra[c] in 'Ll':
         if c == 0:
             query = '.-.. '
         else:
             query += '.-.. '
-    if palavra[c] in 'Mm':
+    elif palavra[c] in 'Mm':
         if c == 0:
             query = '-- '
         else:
             query += '-- '
-    if palavra[c] in 'Nn':
+    elif palavra[c] in 'Nn':
         if c == 0:
             query = '-. '
         else:
             query += '-. '
-    if palavra[c] in 'OoÓóÔô':
+    elif palavra[c] in 'OoÓóÔô':
         if c == 0:
             query = '--- '
         else:
             query += '--- '
-    if palavra[c] in 'Pp':
+    elif palavra[c] in 'Pp':
         if c == 0:
             query = '.--. '
         else:
             query += '.--. '
-    if palavra[c] in 'Qq':
+    elif palavra[c] in 'Qq':
         if c == 0:
             query = '--.- '
         else:
             query += '--.- '
-    if palavra[c] in 'Rr':
+    elif palavra[c] in 'Rr':
         if c == 0:
             query = '.-.'
         else:
             query += '.-. '
-    if palavra[c] in 'Ss':
+    elif palavra[c] in 'Ss':
         if c == 0:
             query = '... '
         else:
             query += '... '
-    if palavra[c] in 'Tt':
+    elif palavra[c] in 'Tt':
         if c == 0:
             query = '- '
         else:
             query += '- '
-    if palavra[c] in 'UuÚú':
+    elif palavra[c] in 'UuÚú':
         if c == 0:
             query = '..- '
         else:
             query += '..- '
-    if palavra[c] in 'Vv':
+    elif palavra[c] in 'Vv':
         if c == 0:
             query = '...- '
         else:
             query += '...- '
-    if palavra[c] in 'Ww':
+    elif palavra[c] in 'Ww':
         if c == 0:
             query = '.-- '
         else:
             query += '.-- '
-    if palavra[c] in 'Xx':
+    elif palavra[c] in 'Xx':
         if c == 0:
             query = '-..- '
         else:
             query += '-..-'
-    if palavra[c] in 'Yy':
+    elif palavra[c] in 'Yy':
         if c == 0:
             query = '-.-- '
         else:
             query += '-.-- '
-    if palavra[c] in 'Zz':
+    elif palavra[c] in 'Zz':
         if c == 0:
             query = '--.. '
         else:
             query += '--.. '
+    else:
+        query += '/ ';
 print()
-print(f'{palavra} em código morse:\n{query} ')
+print(f"'{palavra}' em código morse:\n{query} ")
     
