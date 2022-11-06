@@ -116,7 +116,7 @@
 }
 .about .container .box-text .bxTitle .Title h2{
     font-family: 'Courier Prime', monospace;
-    font-size: 24px;
+    font-size: 32px;
     color: var(--branco);
 }
 .about .container .box-text .bxTitle .line{
@@ -135,7 +135,7 @@
 .about .container .box-text .text p{
     color: white;
     font-family: 'Questrial', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -145,6 +145,32 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+.about .button .line{
+    width: 20%;
+    height: 10%;
+    background: var(--capri);
+    margin-right: 2%;
+}
+.about .button a{
+    text-decoration: none;
+    color: var(--branco);
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
+    transition: all .3s;
+    position: relative;
+    animation: linkContato 1s infinite alternate;
+}
+@keyframes linkContato {
+    from{
+        right: 0px;
+    }
+    to{
+        right: 15px;
+    }
+}
+.about .button a:hover{
+    color: var(--capri);
 }
 
 
