@@ -163,10 +163,10 @@
 }
 @keyframes linkContato {
     from{
-        right: 0px;
+        right: 0%;
     }
     to{
-        right: 15px;
+        right: 1%;
     }
 }
 .about .button a:hover{
