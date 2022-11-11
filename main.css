@@ -175,6 +175,31 @@
 
 
 
+/*-------------Seção habilidades---------------------------------*/
+
+.habilities{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.habilities .box-title{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.habilities .box-skills{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /*-----------------------Responsividade geral-----------------------------*/
 @media (max-width: 1025px) {
     .about .container .box-img .bxImg{

@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb{
 
 
 body{
-    min-height: 2000px;
+    min-height: 5000px;
     overflow-x: hidden;
 }
 
