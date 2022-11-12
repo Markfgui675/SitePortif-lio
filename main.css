@@ -31,67 +31,59 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-}
-.about .container{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
 }
-.about .container{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.about .container .box-img{
+.about .content-about{
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     position: relative;
-    padding: 2%;
 }
-.about .container .box-img .bxImg{
-    position: absolute;
-    width: 70%;
-    height: 90%;
+.about .content-about .container{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.about .content-about .container .square{
+    width: 150px;
+    height: 150px;
     background: var(--capri);
-    margin: auto;
-    z-index: 1;
 }
-.about .container .box-img .bxImg .img{
-    width: 80%;
-    height: 90%;
-    background: url(imagens/tobias-rademacher-kUKF6fv0uss-unsplash.jpg);
-    background-size: cover;
+.about .content-about .container .title{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.about .content-about .container .title h2{
+    color: var(--branco);
+    font-family: 'Questrial', sans-serif;
+    font-size: 48px;
+}
+.about .content-about .line{
+    width: 5px;
+    height: 100%;
+    background: var(--branco);
     position: absolute;
     top: 5%;
-    left: 16%;
+    left: 12%;
 }
-
-.about .container .box-img .bxTitle{
+.about .content-about .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    z-index: 2;
-    top: 46%;
-    left: 2%;
-    color: white;
-    transform: rotateZ(-90deg);
+    top: 25%;
+    left: 25%;
 }
-.about .container .box-img .bxTitle h2{
-    font-size: 52px;
-    font-family: 'Questrial', sans-serif;
+.about .content-about .text p{
+    color: var(--branco);
+    font-family: 'Courier Prime', monospace;
+    font-size: 20px;
+    text-align: justify;
 }
 
-
-
-.about .container .box-text{
+.about .img-btn{
     width: 50%;
     height: 100%;
     display: flex;
@@ -99,79 +91,69 @@
     align-items: center;
     flex-direction: column;
 }
-.about .container .box-text .bxTitle{
+.about .img-btn .imgs{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5%;
+}
+.about .img-btn .imgs .bigImg{
+    width: 60%;
+    height: 100%;
+    padding: 1%;
+}
+.about .img-btn .imgs .bigImg .img{
+    width: 100%;
+    height: 100%;
+    background: gray;
+}
+.about .img-btn .imgs .smallImg{
+    width: 40%;
+    height: 100%;
+    padding: 1%;
+}
+.about .img-btn .imgs .smallImg .img{
+    width: 100%;
+    height: 49%;
+    background: gray;
+}
+.about .img-btn .imgs .smallImg .img.ut{
+    margin-bottom: 7%;
+}
+.about .img-btn .btn{
     width: 100%;
     height: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    flex-direction: row;
 }
-.about .container .box-text .bxTitle .Title{
+.about .img-btn .btn .button{
     width: 60%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
+    padding: 5%;
 }
-.about .container .box-text .bxTitle .Title h2{
-    font-family: 'Courier Prime', monospace;
-    font-size: 32px;
-    color: var(--branco);
-}
-.about .container .box-text .bxTitle .line{
-    width: 40%;
-    height: 10%;
-    background: var(--capri);
-}
-.about .container .box-text .text{
-    width: 85%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-}
-.about .container .box-text .text p{
-    color: white;
-    font-family: 'Questrial', sans-serif;
-    font-size: 20px;
-}
-
-
-.about .button{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.about .button .line{
-    width: 20%;
-    height: 10%;
-    background: var(--capri);
-    margin-right: 2%;
-}
-.about .button a{
+.about .img-btn .btn .button a{
     text-decoration: none;
-    color: var(--branco);
+    color: var(--capri);
     font-family: 'Courier Prime', monospace;
     font-size: 18px;
-    transition: all .3s;
-    position: relative;
-    animation: linkContato 1s infinite alternate;
+    transition: all .2s;
 }
-@keyframes linkContato {
-    from{
-        right: 0%;
-    }
-    to{
-        right: 1%;
-    }
+.about .img-btn .btn .button a:hover{
+    color: var(--branco);
 }
-.about .button a:hover{
-    color: var(--capri);
+.about .img-btn .btn .line{
+    height: 5px;
+    width: 40%;
+    background: var(--branco);
 }
+
 
 
 
@@ -233,13 +215,15 @@
 
 }
 @media (max-width: 750px){
-    .about .container .box-img{
-        display: none;
-    }
-    .about .container .box-text{
+    .about .content-about{
         width: 100%;
     }
-    .about .container .box-text .bxTitle .Title h2{
-        margin-left: 10%;
+    .about .img-btn{
+        display: none;
+    }
+    .about .content-about .text{
+        top: 25%;
+        left: 15%;
+        padding: 5%;
     }
 }
