@@ -165,30 +165,111 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
-.habilities .box-title{
-    width: 20%;
+.habilities .content-habilities{
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.habilities .content-habilities .container{
+    width: 100%;
     display: flex;
     position: relative;
 }
-.habilities .box-skills{
-    width: 80%;
+.habilities .content-habilities .container .square{
+    width: 150px;
+    height: 150px;
+    background: var(--capri);
+}
+.habilities .content-habilities .container .title{
+    position: absolute;
+    top: 30%;
+    left: 7.5%;
+}
+.habilities .content-habilities .container .title h2{
+    color: var(--branco);
+    font-family: 'Questrial', sans-serif;
+    font-size: 48px;
+}
+.habilities .content-habilities .line{
+    width: 5px;
     height: 100%;
+    background: var(--branco);
+    position: absolute;
+    top: -5%;
+    left: 6%;
+}
+
+.habilities .skills{
+    width: 100%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
+}
+.habilities .skills .box{
+    width: 350px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #414141;
+    margin: 2%;
+}
+.habilities .skills .box .title{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.habilities .skills .box .title h3{
+    color: var(--capri);
+    font-family: 'Courier Prime', monospace;
+}
+.habilities .skills .box .logo{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.habilities .skills .box .logo #js,
+.habilities .skills .box .logo #html,
+.habilities .skills .box .logo #css
+{
+    width: 65px;
 }
 
 
 
 /*-----------------------Responsividade geral-----------------------------*/
+@media (max-width: 1450px){
+    .habilities .skills .box{
+        width: 300px;
+        height: 185px;
+    }
+}
+@media (max-width: 1190px) {
+    .habilities .skills{
+        flex-direction: column;
+    }
+}
 @media (max-width: 1025px) {
-    .about .container .box-img .bxImg{
+    .about .img-btn .imgs .bigImg{
         width: 90%;
     }
-    .about .container .box-img .bxTitle{
-        left: -12%;
+    .about .img-btn .imgs .smallImg{
+        display: none;
+    }
+    .habilities .skills{
+        flex-direction: column;
     }
 }
 @media (max-width: 950px) {
@@ -225,5 +306,16 @@
         top: 25%;
         left: 15%;
         padding: 5%;
+    }
+    .habilities .content-habilities .container .title{
+        top: 30%;
+        left: 15%;
+    }
+    .habilities .content-habilities .line{
+        left: 12%;
+    }
+
+    .habilities .skills{
+        margin-top: 6%;
     }
 }
