@@ -203,6 +203,23 @@
     left: 6%;
 }
 
+.habilities .content-habilities .skills{
+    width: 100%;
+    height: 74%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0% 0% 0% 10%;
+}
+.habilities .content-habilities .skills .languages,
+.habilities .content-habilities .skills .experience,
+.habilities .content-habilities .skills .do{
+    width: 25%;
+    height: 100%;
+}
+
+
 
 
 
@@ -273,7 +290,14 @@
         left: 12%;
     }
 
-    .habilities .skills{
-        margin-top: 6%;
+    .habilities .content-habilities .skills{
+        flex-direction: column;
+        padding: 0% 0% 0% 12%;
+    }
+    .habilities .content-habilities .skills .languages,
+    .habilities .content-habilities .skills .experience,
+    .habilities .content-habilities .skills .do{
+        width: 25%;
+        height: 100%;
     }
 }
