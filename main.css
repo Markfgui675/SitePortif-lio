@@ -215,10 +215,46 @@
 .habilities .content-habilities .skills .languages,
 .habilities .content-habilities .skills .experience,
 .habilities .content-habilities .skills .do{
-    width: 25%;
+    width: 30%;
     height: 100%;
 }
-
+.habilities .content-habilities .skills .languages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.habilities .content-habilities .skills .languages .programming{
+    width: 100%;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.habilities .content-habilities .skills .languages .programming .title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.habilities .content-habilities .skills .languages .programming .title h3{
+    font-family: 'Courier Prime', monospace;
+    color: var(--branco);
+}
+.habilities .content-habilities .skills .languages .programming .box{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.habilities .content-habilities .skills .softwares{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -294,10 +330,13 @@
         flex-direction: column;
         padding: 0% 0% 0% 12%;
     }
+    .habilities .content-habilities .skills .languages .programming .title{
+        padding-top: 3%;
+    }
     .habilities .content-habilities .skills .languages,
     .habilities .content-habilities .skills .experience,
     .habilities .content-habilities .skills .do{
-        width: 25%;
+        width: 100%;
         height: 100%;
     }
 }
