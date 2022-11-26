@@ -237,7 +237,7 @@
     height: 30%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
 }
 .habilities .content-habilities .skills .languages .programming .title h3{
     font-family: 'Courier Prime', monospace;
@@ -268,7 +268,7 @@
     height: 30%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
 }
 .habilities .content-habilities .skills .languages .softwares .title h3{
     font-family: 'Courier Prime', monospace;
@@ -286,6 +286,7 @@
     width: 70px;
     margin: 10px;
 }
+
 
 
 
