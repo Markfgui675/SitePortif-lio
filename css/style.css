@@ -209,7 +209,7 @@ header .social a img:hover{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background:#616161 url(imagens/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
+    background:#616161 url(../imagens/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
     background-size: cover;
     background-blend-mode: darken;
 }
