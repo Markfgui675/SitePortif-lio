@@ -18,7 +18,9 @@
 }
 
 .glider{
-    overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:none
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    -ms-overflow-style:none
 }
 
 .glider-track{

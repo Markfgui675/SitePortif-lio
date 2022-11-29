@@ -65,21 +65,7 @@ a{
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-.glider-slide.one {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  margin-right: 6%;
-  flex-direction: column;
-  user-select: none;
-  justify-content: center;
-  align-content: center;
-  width: 350px !important;
-  height: 300px !important;
-  background-color: var(--color2);
-  border-radius: 10px 10px 10px 10px;
-}
-.glider-slide.two {
+.glider-slide.one, .glider-slide.two, .glider-slide.three {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -90,7 +76,7 @@ a{
   width: 350px !important;
   height: 300px !important;
   border-radius: 10px 10px 10px 10px;
-}
+} 
 .glider-slide .title{
   width: 100%;
   height: 30%;
