@@ -1,195 +1,684 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Marcos Fellipe</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="Glider.js-master/glider.min.css">
-    <link rel="stylesheet" href="Glider.js-master/glider.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
 
-    <!--menu-->
-    <header>
+<body id="top" class="ss-preload">
 
-        <div class="logo">
-            <img src="imagens/GfM-removebg-preview.png" alt="mfg-logo">
-        </div>
-        <button class="mobile-menu-button">
-            <img src="imagens/cardapio (1).png" alt="menu-button">
-        </button>
-        <nav class="links">
-            <div class="nav-list">
-                <a href="#about">Sobre mim</a>
-                <a href="#habilities">Habilidades</a>
-                <a href="#">Portifólio</a>
-                <a href="#">Certificações</a>
-                <a href="contato.html" rel="external" target="_blank">Contato</a>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Início</a></li>
+                    <li><a class="smoothscroll" href="#about">Sobre mim</a></li>
+                    <li><a class="smoothscroll" href="#resume">Currículo</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Portifólio</a></li>
+                    <li><a class="smoothscroll" href="#testimonials">Recomendações</a></li>
+                    <li><a class="smoothscroll" href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>Marcos Fellipe</h1>
+
+                    <h3>
+                    I'm a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
+                    effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                    and learn more <a class="smoothscroll" href="#about">about me</a>.
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="https://github.com/Markfgui675" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/marcos-fellipe-guimarães-b503b51b3/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/marcos_fellipe_7/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
 
             </div>
-        </nav>
-        <div class="social">
-            <a href="https://github.com/Markfgui675" target="_blank" rel="external"><img src="imagens/github.png" alt="github"></a>
-            <a href="https://www.linkedin.com/in/marcos-fellipe-guimarães-b503b51b3/" target="_blank" rel="external"><img src="imagens/logotipo-do-linkedin.png" alt="linkedin"></a>
-            <a href="https://www.instagram.com/marcos_fellipe_7/" target="_blank" rel="external"><img src="imagens/logotipo-do-instagram.png" alt="instagram"></a>
-        </div>       
-    </header>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
 
 
-    <!--Conteúdo principal-->
-    <main>
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
 
-        <div class="banner">
-
-            <div class="content">
-                <h1>Marcos Fellipe</h1>
-                <h2 class="typing-animation">Desenvolvedor Mobile</h2>
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/me3.png" alt="">
             </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>Sobre mim</h3>
+                <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+                quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
+                qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
+                nostrum exercitationem ullam corporis suscipit laboriosam.
+                </p>
 
-            <div class="box">
-                <div class="arrow">
-                    <img src="imagens/right-arrow-blue.png" alt="">
-                </div>
-                <div class="social-banner">
-                    <a href="https://github.com/Markfgui675" target="_blank" rel="noopener noreferrer"><img src="imagens/github-blue.png" alt="github"></a>
-                    <a href="https://www.linkedin.com/in/marcos-fellipe-guimarães-b503b51b3/" target="_blank" rel="noopener noreferrer"><img src="imagens/linkedin-logo-blue.png" alt="linkedin"></a>
-                    <a href="https://www.instagram.com/marcos_fellipe_7/" target="_blank" rel="noopener noreferrer"><img src="imagens/instagram-blue.png" alt="instagram"></a>
-                </div>
-            </div>
+                <hr>
 
-        </div>
-
-        <div class="about" id="about">
-            
-            <div class="content-about">
-                <div class="container">
-                    <div class="square"></div>
-                    <div class="title">
-                        <h2 data-aos="fade-right" data-aos-duration="1800">Sobre Mim</h2>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit rem sint, accusamus beatae consequuntur, quas autem tenetur saepe, nemo fuga corporis. Asperiores qui et quaerat blanditiis aliquam mollitia amet. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quam culpa molestias velit, nemo excepturi quo, nisi et voluptatem libero amet vitae? Similique esse expedita repudiandae dolor suscipit sit? Quidem?</p>
-                </div>
-            </div>
-
-            <div class="img-btn">
-                <div class="imgs">
-                    <div class="bigImg">
-                        <div class="img" data-aos="fade-in" data-aos-duration="1800"></div>
-                    </div>
-                    <div class="smallImg">
-                        <div class="img ut" data-aos="fade-in" data-aos-duration="1800"></div>
-                        <div class="img" data-aos="fade-in" data-aos-duration="1800"></div>
-                    </div>
-                </div>
-                <div class="btn">
-                    <div class="button">
-                        <a href="contato.html" target="_blank" rel="external">
-                            Contate-me
-                        </a>
-                    </div>
-                    <div class="line"></div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="habilities" id="habilities">
-            
-            <div class="content-habilities">
-                <div class="container">
-                    <div class="square"></div>
-                    <div class="title">
-                        <h2 data-aos="fade-right" data-aos-duration="1800">Habilidades</h2>
-                    </div>
-                </div>
-                <div class="line"></div>
-
-                <div class="skills">
-
-                    <div class="languages">
-                        <div class="glider-contain">
-                            <div class="glider">
-                                <div class="one"> <!--Glider slide-->
-                                    <div class="title">
-                                        <h3 data-aos="fade-in" data-aos-duration="1800">Linguagens de Programação</h3>
-                                    </div>
-                                    <div class="box">
-                                        
-                                        <div class="boxx" data-aos="fade-up" data-aos-duration="1800">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                                        </div>
-          
-                                        <div class="boxx" data-aos="fade-up" data-aos-duration="1800">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" />
-                                        </div>
-          
-                                    </div>
-                                </div>
-
-                                <div class="two"> <!--Glider slide-->
-                                    <div class="title">
-                                        <h3 data-aos="fade-in" data-aos-duration="1800">Softwares</h3>
-                                    </div>
-
-                                    <div class="box">
-                                        
-                                        <div class="boxx" data-aos="fade-up" data-aos-duration="2000">
-                                            
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
-          
-                                            
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" />
-          
-                                        </div>
-          
-                                        <div class="boxx" data-aos="fade-up" data-aos-duration="2000">
-                                            
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-          
-                                            
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
-          
-                                        </div>
-          
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="do">
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Detalhes de contato</h3>
+    
+                        <p>
+                        Marcos Fellipe Guimarães <br>
+                        <a href="tel:+55619827327">+55 (61) 98212-7327</a> <br>
+                        <a href="mailto:#marcosfgui2006@gmail.com">marcosfgui2006@gmail.com</a>
+                        </p>
                         
                     </div>
+                    <div class="column w-1000-stack">
+                        <a href="https://drive.google.com/file/d/1ZjXD9cdQ-_JkgXQJL-Oa3XALeCWAUGwX/view?usp=sharing" class="btn btn--download" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download CV
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div> <!-- end row -->
 
+    </section> <!-- end s-about -->
+
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Carreira</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Secretaria de Estado de Saúde do Distrito Federal</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Desenvolvedor Full Stack</span> 
+                            <span class="resume-block__header-date">
+                                Junho de 2022 - Junho de 2024
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    Foram 2 anos de experiência na SES-DF, nos quais trabalhei em vários projetos envolvendo várias stacks. Desde desenvolvimento de apps em Flutter e sistemas web em Django até a elaboração de dashboards com Power Bi e tratamento de dados com Python.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Competidor First Lego League</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Competidor FLL</span> 
+                            <span class="resume-block__header-date">
+                                Setembro de 2020 - Novembro de 2021
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    Nos anos de 2020 e 2021 integrei a equipe de robótica Albageek, do Sesi - DF, onde competi torneios regionais de robótica
+                    First Lego League (FLL). Nesse período estive engajado em projetos de inovação para problemas reais da sociedade, além
+                    de desenvolver, programar e construir robôs de mesa para os torneios.
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Educação</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Centro de Ensino Médio Paulo Freire</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Ensino Médio</span> 
+                            <span class="resume-block__header-date">
+                                2024
+                            </span>
+                        </p>
+                    </div>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Habilidades</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <p>
+                    Este é um resumo de tecnologias que domino e já utilizei em outros trabalhos e projetos.
+                    </p>
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                        <div class="progress percent88"></div>
+                        <strong>Python</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent70"></div>
+                        <strong>JavaScript</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent72"></div>
+                        <strong>Dart</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent92"></div>
+                        <strong>Django</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent80"></div>
+                        <strong>Flutter</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent65"></div>
+                        <strong>Node Js</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent60"></div>
+                            <strong>Docker</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"></div>
+                            <strong>HTML CSS</strong>
+                        </li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>Portifólio</h3>
+            </div>
         </div>
 
-    </main>
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/droplet.jpg" 
+                         srcset="images/portfolio/droplet.jpg 1x, 
+                                 images/portfolio/droplet@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/lamp.jpg" 
+                         srcset="images/portfolio/lamp.jpg 1x, 
+                                 images/portfolio/lamp@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/minimalismo.jpg" 
+                         srcset="images/portfolio/minimalismo.jpg 1x, 
+                                 images/portfolio/minimalismo@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/shutterbug.jpg" 
+                         srcset="images/portfolio/shutterbug.jpg 1x, 
+                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="images/portfolio/fuji.jpg" 
+                         srcset="images/portfolio/fuji.jpg 1x, 
+                                 images/portfolio/fuji@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="images/portfolio/skaterboy.jpg" 
+                         srcset="images/portfolio/skaterboy.jpg 1x, 
+                                 images/portfolio/skaterboy@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-07" class="folio-item__thumb">
+                    <img src="images/portfolio/rucksack.jpg" 
+                         srcset="images/portfolio/rucksack.jpg 1x, 
+                                 images/portfolio/rucksack@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-08" class="folio-item__thumb">
+                    <img src="images/portfolio/sanddunes.jpg" 
+                         srcset="images/portfolio/sanddunes.jpg 1x, 
+                                 images/portfolio/sanddunes@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
 
 
-    <!--Rodapé-->
-    <footer></footer>
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-droplet.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Droplet</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>The Lamp</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Minimalismo</h5>
+                    <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-shutterbug.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Shutterbug</h5>
+                    <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                    <ul class="modal-popup__cat">
+                        <li>E-Commerce</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Fuji</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Skaterboy</h5>
+                    <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-07" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-rucksack.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Rucksack</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-08" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Sand Dunes</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
 
 
+    </section> <!-- end s-portfolio -->
 
-    <!--Scripts-->
-    <script src="effects.js"></script>
-    <script src="mobile-menu.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="Glider.js-master/glider.min.js"></script>
-    <script src="glider_2.js"></script>
+
+    <!-- testimonials
+    ================================================== -->
+    <section id="testimonials" class="s-testimonials target-section">
+
+        <div class="s-testimonials__bg"></div>
+
+        <div class="row s-testimonials__header">
+            <div class="column large-12">
+                <h3>Recomendações</h3>
+            </div>
+        </div>
+
+        <div class="row s-testimonials__content">
+
+            <div class="column">
+
+                <div class="swiper-container testimonial-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Tim Cook</strong>
+                                    <span>CEO, Apple</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                            Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                            Laudantium quia consequatur molestias delectus culpa.
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+        
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Sundar Pichai</strong>
+                                    <span>CEO, Google</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                            Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                            Quasi voluptas eius distinctio. Atque eos maxime.
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+        
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Satya Nadella</strong>
+                                    <span>CEO, Microsoft</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                            Voluptatem dignissimos ut.
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Jeff Bezos</strong>
+                                    <span>CEO, Amazon</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                            Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                            </p>
+                        </div> <!-- end testimonial-slider__slide -->
+    
+                    </div> <!-- end testimonial slider swiper-wrapper -->
+
+                    <div class="swiper-pagination"></div>
+
+                </div> <!-- end swiper-container -->
+
+            </div> <!-- end column -->
+
+        </div> <!-- end row -->
+
+    </section> <!-- end s-testimonials -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Contato</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                Algum projeto em mente? Vamos colaborar e construir incrível juntos! Estou aberto para contatos.
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content p_email">
+                                <a class="mailtoui" href="mailto:marcosfgui2006@gmail.com">marcosfgui2006@gmail.com</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Phone
+                            </h5>
+                            <p class="contact-block__content">
+                                <a href="tel:+1975432345">+55 (61) 98212-7327</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:marcosfgui2006@gmail.com" class="mailtoui btn btn--primary h-full-width">Vamos conversar</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="https://github.com/Markfgui675" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/marcos-fellipe-guimarães-b503b51b3/" target="_blank"><i class="fab fa-linkedin"
+                            aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/marcos_fellipe_7/" target="_blank"><i class="fab fa-instagram"
+                            aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright 2024</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
