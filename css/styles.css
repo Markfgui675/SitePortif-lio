@@ -3513,7 +3513,7 @@ input[type="button"].btn--primary:focus {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 1.667;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.808);
     margin-top: var(--vspace-0_5);
     margin-right: auto;
     margin-left: auto;
