@@ -4060,6 +4060,15 @@ input[type="button"].btn--primary:focus {
     transform: scale(1.05);
 }
 
+#button-github-portifolio{
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ------------------------------------------------------------------- 
  * ## modal popup
  * ------------------------------------------------------------------- */
