@@ -3837,6 +3837,20 @@ input[type="button"].btn--primary:focus {
     fill: white;
 }
 
+.about-text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-text{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.about-text.aj{
+    margin-bottom: 0px;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
@@ -4131,7 +4145,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .modal-popup__details {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--color-1);
     font-size: var(--text-sm);
     line-height: calc(var(--vspace-1_5) - 2px);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -4148,6 +4162,7 @@ input[type="button"].btn--primary:focus {
     background-color: var(--color-1);
     border-color: var(--color-1);
     color: white;
+    border-radius: 0px;
 }
 
 
